@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Form</title>
+    
+    <script src="validation.js"></script>
+    
+</head>
+
+<body>
+    
+<div id="showError"><p></p></div>
+
+
+        <form name="form" action="" method="post">
+            
+            <label for="name">Name: </label>
+                <input type="text" id="name" name="name">
+            <br>
+
+            <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+            <br>
+
+            <label for="pass">Password: </label>
+                <input type="password" id="pass" name="pass"> <span id="passError1"></span>
+            <br>
+
+            <label for="repass">Repeat Password: </label>
+                <input type="password" id="repass" name="repass"> <span id="passError2"></span>
+            <br>
+            
+            <label for="gender">Gender:     </label>
+                Female<input type="radio" id="gender1" name="gender" value="Female"> Male<input type="radio" id="gender" name="gender2" value="Male"> 
+            <br>
+            <br>
+            
+            <label for="perfilPhoto">Upload photo: (Optional) </label>
+                <input type="file" id="perfilPhoto" name="perfilPhoto"> 
+            <br>
+            <br>
+
+            <label for="moreInfo">How did you get here?(Optional) </label>
+            <br>
+                <textarea name="moreInfo" id="moreInfo" cols="30" rows="6"></textarea>
+            <br> 
+            <br>
+
+                <input type="button" value="SEND" id="send" name="send" onclick="validate()">
+            
+        </form>
+</body>
+</html>
